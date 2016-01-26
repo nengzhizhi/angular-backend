@@ -3,7 +3,6 @@
 	angular
 		.module('com.module.core')
 		.controller('MainCtrl', function ($scope, $rootScope, $location, AppAuth) {
-			console.log(AppAuth.currentUser);
 			if (!AppAuth.currentUser) {
 				return $location.path('/login');
 			}
