@@ -2,17 +2,15 @@
   'use strict';
   angular
     .module('com.module.core')
-    .directive('side', function(){
+    .directive('sidebar', function(){
       return {
-        templateUrl: 'modules/core/views/elements/side-nav.html',
+        templateUrl: 'modules/core/views/elements/sidebar.html',
         link: function postLink(scope, element){
           var _this = this;
           var animationSpeed = 500;
           element.on('click', 'li a', function(e){
             var $this = $(this);
             var checkElement = $this.next();
-
-            console.log(checkElement);
 
             //Check if the next element is a menu and is visible
             if ((checkElement.is('.treeview-menu')) && (checkElement.is(':visible')) && (!$('body').hasClass('sidebar-collapse'))) {

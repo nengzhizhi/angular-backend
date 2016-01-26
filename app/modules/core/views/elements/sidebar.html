@@ -4,11 +4,11 @@
 
 		<!-- Sidebar Menu -->
 		<ul class="sidebar-menu">
-			<li ng-repeat="item in menuoptions" ui-sref-active="active" class="treeview">
+			<li ng-repeat="item in menuoptions" class="treeview">
 				<a ui-sref="{{item.sref}}">
 					<i class="fa fa-fw {{item.icon}}"></i>
 					{{item.name}}
-					<!-- <i class="fa fa-angle-left pull-right"></i> -->
+					<i class="fa fa-angle-left pull-right"></i>
 				</a>
 			  <ul class="treeview-menu">
 			    <li ng-repeat="subMenu in item.subMenus">
