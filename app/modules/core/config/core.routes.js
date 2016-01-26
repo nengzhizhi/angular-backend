@@ -20,11 +20,6 @@
 					templateUrl: 'modules/core/views/home.html',
 					controller: 'HomeCtrl'
 				})
-				.state('test', {
-					url: '/test',
-					templateUrl: 'modules/core/views/test.html',
-					controller: 'TestCtrl'
-				})
 			$urlRouterProvider.otherwise('/router');
 		});
 })();
