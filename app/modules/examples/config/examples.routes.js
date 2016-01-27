@@ -13,8 +13,14 @@
           url: '',
           templateUrl: 'modules/examples/views/list.html',
           controllerAs: 'ctrl',
-          controller: function (events) {
-            this.events = events;
+          controller: function () {
+            //this.events = events;
+            this.users = [
+              {
+                username: "123"
+              }
+            ]
+            return this;
           }
         })
       })
