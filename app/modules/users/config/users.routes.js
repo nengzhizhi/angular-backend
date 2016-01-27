@@ -28,6 +28,22 @@
 						}
 					}
 				})
+				.state('app.users.add', {
+					url: '/add',
+					templateUrl: 'modules/users/views/form.html',
+					controllerAs: 'ctrl',
+					controller: function ($state, UserService) {
+						this.formFields = UserService.getFormFields();
+						this.submit = function(){
+
+						}
+					},
+					resolve: {
+						user: function(){
+							return {};
+						}
+					}
+				})
 				.state('login', {
 					url: '/login',
 					templateUrl: 'modules/users/views/login.html',

@@ -17,11 +17,5 @@
 					subMenus: subMenus
 				})
 			}
-
-			$rootScope.addMenu('控制台', 'app.home', 'fa-dashboard', []);
-			$rootScope.addMenu('控制台2', 'app.home', 'fa-dashboard', [
-				{ name: '子菜单', sref: 'app.home.xxx' },
-				{ name: '子菜单', sref: 'app.home.xxx' }
-			]);
 		})
 })();
